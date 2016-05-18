@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>contact</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+	<script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	 <script type="text/javascript" src="js/userlogin.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.php"><img src="image/logo.png" alt="" /></a>
+						</div>
+						
+					
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+						
+							<ul class="nav navbar-nav">
+								<li><a href="profile.php"><i class="fa fa-user"></i>บัญชีผู้ใช้</a></li>
+								<li><a href="select.php"><i class="fa fa-shopping-cart"></i>รถเข็น</a></li>
+								<li><a href="step.html"><i class="fa fa-qrcode"></i> ขั้นตอนการสั่งซื้อ</a></li>
+								<li><a href="contact.html"><i class="fa fa-crosshairs"></i>ติดต่อเรา</a></li>
+								<li><a href="logout.php"><i class="fa fa-lock"></i> ออกจากระบบ</a></li>
+							</ul>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="container">
+	<div class="row-fluid">
+        <div class="span8">
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.317379177539!2d100.6011864!3d13.759724300000018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29e13870b9205%3A0x8382dc2fc032f473!2z4Lij4Liy4Lih4LiE4Liz4LmB4Lir4LiHIDIxIOC5geC4ouC4gSAzIOC5geC4guC4p-C4hyDguJ7guKXguLHguJrguJ7guKXguLIg4LmA4LiC4LiVIOC4p-C4seC4h-C4l-C4reC4h-C4q-C4peC4suC4hyDguIHguKPguLjguIfguYDguJfguJ7guKHguKvguLLguJnguITguKMgMTAzMTI!5e0!3m2!1sth!2sth!4v1444226520126" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+    	</div>
+		
+		<div class="container">
+	<div class="row">
+   
+        <hr></hr>
+        <a class="btn btn-primary btn-lg " data-toggle="modal" data-target="#contact" data-original-title>
+          กดเพื่อติดต่อเรา
+        </a>
+        <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="panel-title" id="contactLabel"><span class="glyphicon glyphicon-info-sign"></span>สามารถส่งคำถามต่างๆได้เดียวทางผู้ดูแลระบบจะติดต่อกลับ</h4>
+                    </div>
+                    <form id="DialogForm">
+                    <div class="modal-body" style="padding: 5px;">
+                          <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                    <input class="form-control" name="firstname" id = "firstname" placeholder="ชื่อ" type="text" required autofocus />
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
+                                    <input class="form-control" name="lastname"id = "lastname" placeholder="นามสกุล" type="text" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                                    <input class="form-control" name ="email" id = "email" placeholder="E-mail" type="text" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 10px;">
+                                    <input class="form-control" name="subject" id = "subject" placeholder="หัวข้อ" type="text" >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <input style="resize:vertical;" class="form-control" placeholder="ข้อความ..." rows="6" name="comment" id="comment" ></input>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="panel-footer" style="margin-bottom:-14px;">
+                            <button id = "contactID" type="button" class="btn btn-success" >ส่ง</button>
+                                <!--<span class="glyphicon glyphicon-ok"></span>-->
+                            <input type="reset" class="btn btn-danger" value="ลบ" />
+                                <!--<span class="glyphicon glyphicon-remove"></span>-->
+                            <button style="float: right;" type="button" class="btn btn-default btn-close" data-dismiss="modal">ปิด</button>
+                        </div>
+					</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	
+    
+    
+</div>
+    	
+      	<div class="span4">
+		<hr></hr>
+    		<h4>ติดต่อเราได้ที่</h4>
+    		<address>
+    			<strong><h1>บริษัท The Electronic</h1></strong><br>
+    			<h4>เลขที่ 63/5     ซอยรามคำแหง 21    ถนนรามคำแหง   แขวงพับพลา   เขตวังทองหลาง  กรุงเทพ 10310<br>
+    			<abbr>Tel:</abbr> 02-999-9999   09-2635-6952</h4>
+    		</address>
+            <html xmlns="http://www.w3.org/1999/xhtml"  
+ xmlns:fb="http://www.facebook.com/2008/fbml">  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>Facebook new comment</title>  
+  
+<!--  
+หากต้องการให้สามารถจัดการ หรือดูแลรายการ comment ในหน้านั้นเลย สามารถกำหนด meta tag ดังนี้  
+-->  
+<meta property="fb:admins" content="1234998873"/>  
+<!--  
+หากต้องการให้สามารถจัดการ หรือดูแลรายการ comment ทั้งหมด สามารถกำหนด meta tag ดังนี้  
+<meta property="fb:app_id" content="{YOUR_APPLICATION_ID}">  
+-->  
+<meta property="fb:app_id" content="134358299911812">  
+</head>  
+  
+<body>  
+  
+  
+  
+<div id="fb-root"></div>  
+  
+<fb:comments   
+href="http://localhost/projectweb/comment.php"   
+num_posts="10"   
+width="1000">  
+</fb:comments>  
+<!--  
+href กำหนด url ของหน้าที่แสดง  
+num_posts จำนวนที่ต้องการแสดง ต่อหนึ่งหน้า  
+width  ความกว้างที่ต้องการ  
+-->  
+<!--  
+<script src="http://connect.facebook.net/en_US/all.js#appId={YOUR_APPLICATION_ID}&amp;xfbml=1"></script>  
+-->  
+<script src="http://connect.facebook.net/en_US/all.js#appId=134358299911812&amp;xfbml=1"></script>  
+			<hr></hr>
+    	</div>
+    </div>
+</div>
+
+    </div>
+    <!-- /.container -->
+	<footer id="footer">
+		
+	</footer><!--/Footer-->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>

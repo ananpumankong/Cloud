@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>admin2_page</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="logo pull-left">
+							<a href="index.php"><img src="image/logo.png" alt="" /></a>
+						</div>
+						
+					
+					</div>
+					<div class="col-sm-8">
+						<div class="shop-menu pull-right">
+						
+							<ul class="nav navbar-nav">
+							
+							
+								<li><a href="#"><i class="glyphicon glyphicon-user"></i>สวัสดีคุณ Admin</a></li>
+								<li><a href="login.html"><i class="fa fa-lock"></i> ออกจากระบบ</a></li>
+							</ul>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+	
+	<ul class="nav nav-tabs">
+ <li role="presentation"><a href="test.php">ตรวจสมาชิก<span class="badge">5</span></a></li>
+  <li role="presentation"><a href="admin.php">ตรวจสินค้า</a></li>
+  <li role="presentation"class="active"><a href="admin2.html">อัพเดทรายการสินค้า</a></li>
+  <li role="presentation"><a href="adminbuy.php">รายการสั่งซื้อ<span class="badge">2</span></a></li>
+  <li role="presentation"><a href="admin3.php">จำนวนการสั่งซื้อ</a></li>
+  <li role="presentation" ><a href="admincon.php">ติดต่อกลับ</a></li>
+  
+</ul>
+
+
+<div class="form-group"><!--sign up form-->
+		<form method="post" action="insert_data.php" enctype="multipart/form-data">
+						<h2>อัพเดทรายการสินค้า(Update Store)</h2>
+						<div  class="form-group"><!--login form-->
+						<div class="col-xs-12 col-sm-6 col-md-8">
+		
+						<h4>ชื่อรายการสินค้า</h4>
+					<div class="input-group">
+						<span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-ice-lolly-tasted"style = "font-size:20px;"></span></span>
+						<input maxlength=16 type="text" name="RegisterUsername" id = "RegisterUsername" class="form-control"  data-mini="true" placeholder="กรุณาใส่ชื่อรายการสินค้า" aria-describedby="basic-addon2">
+					</div></div>
+					<div class="col-xs-8 col-md-12">
+					<h4>หมวดหมู่สินค้า</h4>
+							
+              <select class="form-control col-sm-2" name="expiry-month" id="expiry-month">
+                <option value="0">หมวดหมู่</option>
+                <option value="1">เซอร์โวมอเตอร์ 		(01)</option>
+                <option value="2">มอเตอร์ 	(02)</option>
+                <option value="3">บอร์ด	(03)</option>
+                <option value="4">อุปกรณ์เครื่อง 3 D 	(04)</option>
+                <option value="5">เครื่องมือช่าง (05)</option>
+				<option value="6">เซนเซอร์และโมดูล (06)</option>
+               
+              </select>
+			  </div>
+           
+					 <div class="col-xs-3 .col-sm-4">
+					 <h4>ราคา</h4>
+					<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-usd"style = "font-size:20px;"></span></span>
+							<input maxlength=8 type="text" name="price"  data-mini="true" class="form-control" placeholder="กรุณาใส่ราคา" aria-describedby="basic-addon1">
+					</div></div>
+					
+					<div class="col-xs-6 col-sm-8"><h4>รายละเอียดสินค้า</h4>
+					<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-text-color"style = "font-size:20px;"></span></span>
+							<input maxlength=50 type="text" name="detail" data-mini="true" class="form-control" placeholder="กรุณาใส่รายละเอียดสินค้า" aria-describedby="basic-addon1">
+					</div></div>
+					<div class="col-xs-3 col-sm-4">
+					<div class="form-group">
+						<label for="exampleInputFile"><h4>รูปภาพ</h4></label>
+						<p><input type="file" name="upfile"></p>
+						<p class="help-block "></p>
+					</div>
+					</div>
+					</div>
+					<div class="col-xs-12" >
+					<hr>
+					</hr>
+					</div>
+					
+					
+					<div class="col-xs-6 col-sm-3"><button type="submit" class="btn1 btn-lg btn-primary btn-block"><h2>อัพเดทสินค้า</h2></button>
+					</div></div><!--/sign up form-->
+		</form>
+</div>
+
+        
+
+            
+    <!-- /.container -->
+	<footer id="footer">
+		
+    <!-- /.container -->
+	</footer><!--/Footer-->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
